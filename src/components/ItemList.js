@@ -12,7 +12,7 @@ function ItemList(props) {
 
   return (
     <div className="item-list">
-      <h3>Shopping list :</h3>
+      <h3>Shopping List:</h3>
       <ul>
         {props.items.map((item) => (
           <li key={item.id}>

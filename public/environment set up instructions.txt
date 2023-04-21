@@ -1,0 +1,17 @@
+
+
+Environment 
+    npx create-react-app my-shopping-cart
+    mkdir my-shopping-cart
+
+Dependences
+    npm init
+    npm install react react-dom
+
+Mongo install
+
+    npm install mongoose dotenv
+
+    create .enf file to root dir
+
+    add MONGODB_URI=<your-mongodb-uri>
