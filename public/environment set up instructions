@@ -1,0 +1,9 @@
+
+
+Environment 
+    npx create-react-app my-shopping-cart
+    mkdir my-shopping-cart
+
+Dependences
+    npm init
+    npm install react react-dom

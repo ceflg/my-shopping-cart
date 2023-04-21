@@ -1,0 +1,1 @@
+# This is simple shopping list application 
