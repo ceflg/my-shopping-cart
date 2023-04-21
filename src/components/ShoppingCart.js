@@ -4,20 +4,6 @@ import '../styles/ShoppingCart.css';
 
 function ShoppingCart() {
   const [items, setItems] = useState([]);
-  const [newItemName, setNewItemName] = useState('');
-
-  const addItem = (event) => {
-    event.preventDefault();
-
-    const newItem = {
-      id: items.length + 1,
-      name: newItemName,
-      isChecked: false
-    };
-
-    setItems([...items, newItem]);
-    setNewItemName('');
-  };
 
   const handleDelete = (id) => {
     setItems(items.filter(item => item.id !== id));
@@ -35,13 +21,24 @@ function ShoppingCart() {
 
   return (
     <div className="shopping-cart">
-      <form onSubmit={addItem}>
-        <label>
-          Add items to list: 
-          <input type="text" value={newItemName} onChange={(event) => setNewItemName(event.target.value)} />
-        </label>
-        <button type="submit">Add</button>
-      </form>
+      <h2>Shopping Cart</h2>
+      <div>
+        <label htmlFor="newItem">New Item:</label>
+        <input type="text" id="newItem" />
+        <button onClick={() => {
+          const newItemName = document.getElementById('newItem').value;
+          if (items.some(item => item.name === newItemName)) {
+            alert(`Item ${newItemName} already exists in the list!`);
+          } else {
+            const newItem = {
+              id: items.length + 1,
+              name: newItemName,
+              isChecked: false
+            };
+            setItems([...items, newItem]);
+          }
+        }}>Add Item</button>
+      </div>
       <ItemList items={items} handleDelete={handleDelete} handleCheck={handleCheck} />
     </div>
   );
