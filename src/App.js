@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+//import React, { Component } from 'react';
 import './styles/ShoppingCart.css';
 import './app.css';
 import ShoppingCart from './components/ShoppingCart';
