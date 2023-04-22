@@ -40,3 +40,32 @@
   .shopping-cart button:hover {
     background-color: #3e8e41;
   }
+  .shopping-cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .shopping-cart-buttons {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+  }
+  
+  .shopping-cart-form {
+    width: 80%;
+    margin-bottom:
+
+  }
+  .shopping-list form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .shopping-list form label,
+  .shopping-list form input {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  

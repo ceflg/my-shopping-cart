@@ -10,7 +10,7 @@ Dependences
 
 Mongo install
 
-    npm install mongoose dotenv
+    npm install mongoose express body-parser
 
     create .enf file to root dir
 

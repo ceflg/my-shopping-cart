@@ -1,3 +1,4 @@
+
 const mongoose = require('mongoose');
 require('dotenv').config();
 
@@ -16,3 +17,5 @@ db.once('open', () => {
 });
 
 module.exports = db;
+
+//
