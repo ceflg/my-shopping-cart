@@ -33,3 +33,12 @@
 .item-list li button {
   margin-left: auto;
 }
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.input-group > label {
+  margin-right: 10px;
+}
